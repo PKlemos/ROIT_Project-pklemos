@@ -1,4 +1,4 @@
-### Project Description ###
+# Project Description #
 
 The purpose of this project is to extract information from sections A, B, and C of the CNAE (National Classification of Economic Activities) from the IBGE (Brazilian Institute of Geography and Statistics) website, save this information in an excel file, and then process this data into a table using a Python script.
 
@@ -8,17 +8,17 @@ There is a folder called API within the project that contains a Python API capab
 
 ## API ##
 
-# /insert_data #
+### /insert_data ###
 
 This endpoint accepts POST requests with an excel file containing data to be inserted into the database. 
 
-# /view_data #
+### /view_data ###
 
 This endpoint accepts GET requests and returns a JSON response containing all data from the database.
 
 ## Requirements ##
 
-*Python 3.10
-*openpyxl
-*unidecode
-*flask
+* Python 3.10
+* openpyxl
+* unidecode
+* flask
