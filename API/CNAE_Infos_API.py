@@ -26,7 +26,7 @@ def create_tables():
     conn.close()
 
 
-@app.route('/insert_data', methods=['POST'])
+@app.route('/CNAE_Infos', methods=['POST'])
 def insert_data():
     file = request.files['file']
     wb = load_workbook(filename=file, read_only=True)
@@ -43,10 +43,9 @@ def insert_data():
 
     return 'Data inserted successfully!'
 
-@app.route('/test', methods=['GET'])
 
 
-@app.route('/view_data', methods=['GET'])
+@app.route('/CNAE_Infos', methods=['GET'])
 def select_data():
     conn = sqlite3.connect(DATABASE_NAME)
     cursor = conn.cursor()
