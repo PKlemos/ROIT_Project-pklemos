@@ -26,7 +26,7 @@ def create_tables():
     conn.close()
 
 
-@app.route('/CNAE_Infos', methods=['POST'])
+@app.route('/CNAE_infos', methods=['POST'])
 def insert_data():
     file = request.files['file']
     wb = load_workbook(filename=file, read_only=True)
@@ -45,7 +45,7 @@ def insert_data():
 
 
 
-@app.route('/CNAE_Infos', methods=['GET'])
+@app.route('/CNAE_infos', methods=['GET'])
 def select_data():
     conn = sqlite3.connect(DATABASE_NAME)
     cursor = conn.cursor()
@@ -73,7 +73,7 @@ def select_data():
     return jsonify(result)
 
 
-@app.route('/delete_data', methods=['DELETE'])
+@app.route('/CNAE_infos', methods=['DELETE'])
 def delete_data():
     conn = sqlite3.connect(DATABASE_NAME)
     cursor = conn.cursor()
