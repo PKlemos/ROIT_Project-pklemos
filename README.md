@@ -23,3 +23,7 @@ This endpoint requests and returns a JSON response containing all data from the 
 * openpyxl
 * unidecode
 * flask
+
+You can install the requirements using the command:
+### pip install -r requirements.txt ###
+Make sure you are using this command at the "requirements.txt" folder
