@@ -4,7 +4,7 @@ The purpose of this project is to extract information from sections A, B, and C 
 
 The Python script is written in version 3.10 and requires the openpyxl and unidecode libraries to function properly.
 
-There is a folder called API within the project that contains a Python API capable of reading the data from the excel file and writing it to a SQLite database through the "/insert_data" endpoint. The API also allows for data retrieval through the "/view_data" endpoint. The flask and openpyxl libraries are required for the API to function properly.
+There is a folder called API within the project that contains a Python API capable of reading the data from the excel file and writing it to a SQLite database through the "/CNAE_infos" endpoint. The API also allows for data retrieval through the same endpoint. The flask and openpyxl libraries are required for the API to function properly.
 
 ## API ##
 ## Endpoint: /CNAE_infos ##
