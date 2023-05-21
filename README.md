@@ -27,3 +27,5 @@ This endpoint requests and returns a JSON response containing all data from the 
 You can install the requirements using the command:
 ### pip install -r requirements.txt ###
 Make sure you are using this command at the "requirements.txt" folder
+
+Please remember to include the library patch and patch of your python directory in the input of the Python Scope in the transaction processing of the project workflow
